@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-About this site
+I am a currently a second year student attending Cal State Monterey Bay and I am majoring in statistics.
 
 ```{r}
 1 + 1
