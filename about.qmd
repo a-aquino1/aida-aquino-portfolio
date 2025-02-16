@@ -4,6 +4,10 @@ title: "About"
 
 I am a currently a second year student attending Cal State Monterey Bay and I am majoring in statistics.
 
+## Education
+
+Cal State Monterrey Bay \| 2023 - 2027
+
 ```{r}
 1 + 1
 ```

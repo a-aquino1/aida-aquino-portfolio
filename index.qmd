@@ -1,5 +1,15 @@
 ---
-title: "aida-aquino-portfolio"
+title: "Aida Aquino Arias"
+about:
+  template: jolla
+  image: profile.jpeg
+  links: 
+  - icon: linkedin
+    text: LinkedIn
+    href: www.linkedin.com/in/aida-aquino-arias-114890350
+  - icon: github
+    text: Github
+    href: https://github.com/a-aquino1
 ---
 
 This is a Quarto website.
