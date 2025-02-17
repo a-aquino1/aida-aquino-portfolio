@@ -1,21 +1,25 @@
 ---
 title: "Aida Aquino Arias"
+image: profile.jpeg
 about:
   template: jolla
-  image: profile.jpeg
   links: 
   - icon: linkedin
     text: LinkedIn
-    href: www.linkedin.com/in/aida-aquino-arias-114890350
+    href: https://www.linkedin.com/in/aida-aquino-arias-114890350
   - icon: github
     text: Github
     href: https://github.com/a-aquino1
 ---
 
-This is a Quarto website.
+I am a current second year student atttending Cal State Monterey Bay and majoring in Statistics.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Education
 
-```{r}
-1 + 1
-```
+**Matilda Torres High School** \| Madera, CA
+
+High School Diploma (2023)
+
+**Cal State Monterey Bay** \| Seaside, CA
+
+Current Student (2023-2027)
