@@ -2,4 +2,4 @@
 title: "About Me"
 ---
 
-I am a current second year student atttending Cal State Monterey Bay and majoring in Statistics.
+I am a current second year student attending Cal State Monterey Bay and majoring in Statistics.
