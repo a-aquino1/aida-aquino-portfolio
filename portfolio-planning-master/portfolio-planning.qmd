@@ -1,5 +1,6 @@
 ---
-title: "Passenger Trend between School and Public Holidays"
+title: "Portfolio Project"
+echo: false
 ---
 
 ## Data Description
@@ -77,8 +78,6 @@ global_holidays_cleaned <- global_holidays |>
          Type == "Public holiday") |>
   mutate(Year = year(Date), 
          Month = month(Date))
-
-print(global_holidays_cleaned)
 #filtered out the US holidays only as I want to mainly focus on US based holidays to narrow the data.
 
 ```
@@ -88,7 +87,6 @@ print(global_holidays_cleaned)
  
 monthly_passengers_cleaned <- monthly_passengers |>
   filter(ISO3 == "USA")
-  
 
 #filtered to get only us passengers
 ```
@@ -112,8 +110,6 @@ I wanted to focus on filtering the data I will mainly be working with such as wo
 
 ## Travel Trends by Holiday Type
 
-Based on the travel trends of school breaks and public holidays, by finding the average of the the geaph showcas
-
 ```{r}
 #| label: travel-trends-by-school-holiday
 
@@ -127,7 +123,7 @@ travel_trend <- monthly_passengers_cleaned |>
                                     Month %in% c(12, 1)~ "Winter Break", 
                                     Type == "Public holiday" ~ "Public holiday")) |>
   group_by(Holiday_type) |>
-summarize(across(c(Total, Domestic, International, Total_OS), mean, na.rm = TRUE))|>
+summarize(across(c(Total, Domestic, International, Total_OS), mean, na.rm = TRUE)) |>
   arrange(desc(Total))
 
   
@@ -137,7 +133,7 @@ summarize(across(c(Total, Domestic, International, Total_OS), mean, na.rm = TRUE
 
 #### Travel Trend
 
-By specfically choosing to focus on the months typical school breaks occur in we can bridge the gap in missing data for registered school holidays. The schools breaks are categories per their respective month while public holidays are everything else that is not in the respective month of the school breaks. The graph depict a visual of the average monthly passengers per school break or holiday. It seems as though during summer break there is an increase of passengers. Apart from winter break it does seems that school breaks have an influence on how many people choose to travel.
+By specficaly choosing to focus on the months typical school breaks occur in we can bridge the gap in missing data for registered school holidays. The schools breaks are categories per their respective month while public holidays are everything else that is not in the respective month of the school breaks. The graph depict a visual of the average monthly passengers per school break or holiday. It seems as though during summer break there is an increase of passengers. Apart from winter break it does seems that school breaks have an influence on how many people choose to travel.
 
 ```{r}
 #| label: travel-trends
